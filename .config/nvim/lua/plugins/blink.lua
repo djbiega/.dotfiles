@@ -56,23 +56,6 @@ return {
 					module = "blink.cmp.sources.snippets",
 					opts = {
 						show_autosnippets = true,
-						documentation = function(snippet)
-							if type(snippet.body) == "table" then
-								return {
-									kind = "markdown",
-									value = "```"
-										.. (snippet.lang or "")
-										.. "\n"
-										.. table.concat(snippet.body, "\n")
-										.. "\n```",
-								}
-							elseif type(snippet.body) == "string" then
-								return {
-									kind = "markdown",
-									value = "```\n" .. snippet.body .. "\n```",
-								}
-							end
-						end,
 					},
 				},
 			},

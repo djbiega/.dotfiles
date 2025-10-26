@@ -107,6 +107,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias v='nvim'
+alias k='kubectl'
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -115,6 +116,7 @@ export PATH=$PATH:/usr/local/go/bin
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 eval "$(helm completion zsh)"
+eval "$(kubectl completion zsh)"
 
 source /usr/share/doc/fzf/examples/completion.zsh
 source /usr/share/doc/fzf/examples/key-bindings.zsh
