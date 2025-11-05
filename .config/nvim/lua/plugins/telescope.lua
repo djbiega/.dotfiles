@@ -49,11 +49,32 @@ return {
 			-- You can put your default mappings / updates / etc. in here
 			--  All the info you're looking for is in `:help telescope.setup()`
 			--
-			-- defaults = {
-			--   mappings = {
-			--     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-			--   },
-			-- },
+			defaults = {
+				layout_strategy = "vertical",
+				layout_config = {
+					horizontal = {
+						prompt_position = "bottom",
+						preview_width = 0.5,
+
+						width = 0.8,
+						height = 0.6,
+						preview_cutoff = 0,
+					},
+					center = {
+						width = 0.7,
+						height = 0.5,
+					},
+				},
+				sorting_strategy = "ascending",
+				mappings = {
+					i = {
+						["<C-v>"] = require("telescope.actions").select_vertical,
+					},
+					n = {
+						["<C-v>"] = require("telescope.actions").select_vertical,
+					},
+				},
+			},
 			-- pickers = {}
 			extensions = {
 				["ui-select"] = {

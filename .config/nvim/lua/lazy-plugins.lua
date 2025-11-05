@@ -12,6 +12,7 @@ require("lazy").setup({
 	require("plugins.tokyonight"),
 	require("plugins.todo-comments"),
 	require("plugins.markview"),
+	require("plugins.markdown-preview"),
 	require("plugins.mini"),
 	require("plugins.neogen"),
 	require("plugins.neogit"),
