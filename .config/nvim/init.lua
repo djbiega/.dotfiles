@@ -19,4 +19,6 @@ require("lazy-bootstrap")
 -- [[ Configure and install plugins ]]
 require("lazy-plugins")
 
+-- [[ Setting filetypes ]]
+require("filetype")
 -- vim: ts=2 sts=2 sw=2 et
